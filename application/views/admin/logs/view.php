@@ -1,32 +1,21 @@
-<style>
-  .data {
-    padding: 12px;
-    font-size: 18px;
-  }
-  .data p {
-    text-align: center;
-  }
-
-  pre {
-    background: #fff;
-    border: none;
-  }
-  pre code {
-    color: #c7254e;
-    background-color: #f9f2f4;
-    border-radius: 4px;
-  }
-</style>
-<div class="panel panel-default">
-  <div class="panel-heading">
-  <?php echo $log; ?>
-  <a id="pauseResume" class="btn btn-xs btn-primary pull-right" href="#">Pause</a>
-  </div>
-  <div class="panel-body">
-    <div class="data">
-        <p>Loading...</p>
-    </div>
-</div>
+    <div class="row bg-title">
+                   <h3>Logs</h3>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="white-box">
+                          <div class="panel-heading">
+                          <?php echo $log; ?>
+                          <a id="pauseResume" class="btn btn-xs btn-primary pull-right" href="#">Pause</a>
+                          </div>
+                          <div class="panel-body">
+                            <div class="data">
+                                <p>Loading...</p>
+                            </div>
+                          </div> 
+                        </div>
+                    </div>
+                </div>        
 
 <script>
   var pause = false;

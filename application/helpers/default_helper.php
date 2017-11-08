@@ -66,3 +66,15 @@ if (!function_exists('active')) {
     return ($CI->uri->segment(2) == $route) ? 'active' : '';
  }
 }
+
+if (!function_exists('plugins')) {
+  function plugins($file) {
+    return site_url() . 'assets/plugins/' . $file;
+  }
+}
+
+if (!function_exists('bootstrap')) {
+  function bootstrap($file) {
+    return site_url() . 'assets/bootstrap/' . $file;
+  }
+}
